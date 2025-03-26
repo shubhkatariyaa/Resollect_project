@@ -68,9 +68,37 @@ This Loan Portfolio Management Dashboard provides an intuitive and efficient way
 ## Access the application:
 - <a href="http://localhost:3000">Local Host</a> in your browser.
 
+  
+
 
 ![image alt](https://github.com/shubhkatariyaa/Resollect_project/blob/6d46c7d4c8f0b2a48d7f17103ff99b3ba4dfc4cf/portfolio%20page.png)
-#### image 1 :Portfolio page
+#### image 1 :Portfolio Page
+
+
 
 ![image alt](https://github.com/shubhkatariyaa/Resollect_project/blob/6d46c7d4c8f0b2a48d7f17103ff99b3ba4dfc4cf/profile%20section.png)
 #### image 2 :Profile Section
+
+
+
+![image alt](https://github.com/shubhkatariyaa/Resollect_project/blob/44825d1a2972f9b5bbe3b8f3528c86b8f8a48a0a/region%20filter.png)
+#### image 3:Region Filter
+
+
+
+![image alt](https://github.com/shubhkatariyaa/Resollect_project/blob/44825d1a2972f9b5bbe3b8f3528c86b8f8a48a0a/selected%20row.png)
+#### image 4:Selected Row
+
+
+
+![image alt](https://github.com/shubhkatariyaa/Resollect_project/blob/44825d1a2972f9b5bbe3b8f3528c86b8f8a48a0a/state%20filter.png)
+#### image 5: State Filter
+
+
+
+![image alt](https://github.com/shubhkatariyaa/Resollect_project/blob/44825d1a2972f9b5bbe3b8f3528c86b8f8a48a0a/upload%20document.png)
+#### image 6: Upload Document
+
+
+
+
