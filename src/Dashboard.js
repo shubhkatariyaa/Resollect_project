@@ -59,12 +59,12 @@ const Sidebar = ({ setActiveSection }) => {
           </li>
         ))}
       </ul>
-      <footer><div className="flex items-center justify-center border-t  pt-8 mt-40">
+      <div className="flex items-center justify-center border-t  pt-8 mt-40">
     <span className="text-gray-500 text-sm">Powered by</span>
     <img src="../resollect_logo.jpg" alt="esollect Logo" className="w-6 h-6 mx-1 mr-0" />
     <span className="text-blue-900 font-bold">esollect</span>
       </div>
-      </footer>
+      
        
     </div>
     
