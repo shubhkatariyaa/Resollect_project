@@ -1,4 +1,4 @@
-# Project Documentation: Loan Portfolio Management Dashboard
+# Project Documentation: Resollect Portfolio project
 
 ## Overview
 This project is a Loan Portfolio Management Dashboard developed using **React.js** and **Tailwind CSS**. It provides a structured interface for managing loan and borrower details, offering filtering, table customization, document uploads, and user profile management.
@@ -6,7 +6,7 @@ This project is a Loan Portfolio Management Dashboard developed using **React.js
 ## Technologies Used
 - **React.js** (Frontend development)
 - **Tailwind CSS** (Styling)
-- **React Hooks** (State and effect management)
+
 ## Features
 ### Sidebar Navigation
 - The sidebar contains multiple sections for easy navigation.
@@ -48,11 +48,11 @@ This Loan Portfolio Management Dashboard provides an intuitive and efficient way
 
 
 
-### Installation & Setup
+# Installation & Setup
 
-# Clone the repository:
+## Clone the repository:
 
-- git clone https://github.com/your-repo/resollect-dashboard.git
+- <a href="https://github.com/shubhkatariyaa/Resollect_project/tree/main">Resollect_Project</a>
 - cd resollect-dashboard
 
 ## Install dependencies:
@@ -66,4 +66,4 @@ This Loan Portfolio Management Dashboard provides an intuitive and efficient way
 **[Note : If you download the project as a ZIP file and extract it, it may create a subfolder with the same name. For example, if the file is named my_dashboard.zip, it might extract into a folder named my_dashboard. In this case, navigate inside the extracted folder using: cd my_dashboard  ]**
 
 ## Access the application:
--Open http://localhost:3000 in your browser.
+- <a href="http://localhost:3000">Local Host</a> in your browser.
