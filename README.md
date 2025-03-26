@@ -18,7 +18,7 @@ This project is a Loan Portfolio Management Dashboard developed using **React.js
   - **State**
   - **Region**
   - **Sanction Amount**
-  - Other relevant loan parameters
+  - **Other relevant loan parameters**
 - A **Select Column** option allows users to choose which columns to display in the table.
 - A **More Filters** option for additional filtering based on specific column values.
 - **Loan Number Search Bar** to quickly search loan details.
@@ -52,7 +52,7 @@ This Loan Portfolio Management Dashboard provides an intuitive and efficient way
 
 ## Clone the repository:
 
-- <a href="https://github.com/shubhkatariyaa/Resollect_project/tree/main">Resollect_Project</a>
+- <a href="https://github.com/shubhkatariyaa/Resollect_project/tree/main">Resollect Project</a>
 - cd resollect-dashboard
 
 ## Install dependencies:
@@ -67,3 +67,10 @@ This Loan Portfolio Management Dashboard provides an intuitive and efficient way
 
 ## Access the application:
 - <a href="http://localhost:3000">Local Host</a> in your browser.
+
+
+![image alt](https://github.com/shubhkatariyaa/Resollect_project/blob/6d46c7d4c8f0b2a48d7f17103ff99b3ba4dfc4cf/portfolio%20page.png)
+#### image 1 :Portfolio page
+
+![image alt](https://github.com/shubhkatariyaa/Resollect_project/blob/6d46c7d4c8f0b2a48d7f17103ff99b3ba4dfc4cf/profile%20section.png)
+#### image 2 :Profile Section
