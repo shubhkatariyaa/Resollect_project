@@ -1,392 +1,4 @@
-// import React, { useState } from "react";
-// import {
-//   FaUserCircle, FaSort, FaFilter, FaHome,
-//   FaBriefcase, FaBell, FaStickyNote, FaHammer,
-//   FaCloudUploadAlt, FaTools, FaUserCog, FaShieldAlt,
-//   FaChevronDown
-// } from "react-icons/fa";
 
-// // const Sidebar = () => {
-// //   return (
-// //     <div className="w-64 h-screen bg-white shadow-md p-5">
-// //       <div className="flex items-center mb-4">
-// //         <img src="..\resollect_logo.jpg" alt="Company Logo" className="w-10 h-10 mr-2" />
-// //         <h1 className="text-4xl font-bold text-blue-900">esollect</h1>
-// //       </div>
-// //       <ul className="space-y-4">
-// //         {[
-// //           { name: "Dashboard", icon: <FaHome /> },
-// //           { name: "Portfolio", icon: <FaBriefcase /> },
-// //           { name: "Notifications", icon: <FaBell /> },
-// //           { name: "Notices", icon: <FaStickyNote /> },
-// //           { name: "Auction", icon: <FaHammer /> },
-// //           { name: "Data Upload", icon: <FaCloudUploadAlt /> },
-// //           { name: "Control Panel", icon: <FaTools /> },
-// //           { name: "User Management", icon: <FaUserCog /> },
-// //           { name: "Permissions", icon: <FaShieldAlt /> }
-// //         ].map((item) => (
-// //           <li key={item.name} className="p-2 hover:bg-sky-200 rounded cursor-pointer flex items-center">
-// //             <span className="mr-2">{item.icon}</span> {item.name}
-// //           </li>
-// //         ))}
-// //       </ul>
-// //     </div>
-    
-// //   );
-// // };
-// const Sidebar = () => {
-//   return (
-//     <div className="w-64 h-screen bg-white shadow-md p-5 flex flex-col justify-between">
-//       <div>
-//         <div className="flex items-center mb-4">
-//           <img src="../resollect_logo.jpg" alt="Company Logo" className="w-10 h-10 mr-2" />
-//           <h2 className="text-3xl font-bold text-blue-900">esollect</h2>
-//         </div>
-//         <ul className="space-y-4">
-//           {[
-//             { name: "Dashboard", icon: <FaHome /> },
-//             { name: "Portfolio", icon: <FaBriefcase /> },
-//             { name: "Notifications", icon: <FaBell /> },
-//             { name: "Notices", icon: <FaStickyNote /> },
-//             { name: "Auction", icon: <FaHammer /> },
-//             { name: "Data Upload", icon: <FaCloudUploadAlt /> },
-//             { name: "Control Panel", icon: <FaTools /> },
-//             { name: "User Management", icon: <FaUserCog /> },
-//             { name: "Permissions", icon: <FaShieldAlt /> }
-//           ].map((item) => (
-//             <li key={item.name} className="p-2 hover:bg-sky-200 rounded cursor-pointer flex items-center">
-//               <span className="mr-2">{item.icon}</span> {item.name}
-//             </li>
-//           ))}
-//         </ul>
-//       </div>
-//       <div className="flex items-center justify-center border-t pt-4 mt-4">
-//         <span className="text-gray-500 text-sm">Powered by</span>
-//         <img src="../resollect_logo.jpg" alt="Esollect Logo" className="w-6 h-6 mx-2" />
-//         <span className="text-blue-900 font-bold">esollect</span>
-//       </div>
-//     </div>
-//   );
-// };
-// const Header = () => {
-//   return (
-//     <div className="flex justify-between items-center p-4 shadow-md bg-white">
-//       <div className="flex items-center"></div>
-//       <div className="flex items-center space-x-2">
-//         <FaUserCircle className="text-gray-700 text-xl" />
-//         <div className="flex flex-col items-end">
-//           <span className="text-gray-700 font-bold">Shubham</span>
-//           <span className="text-gray-500 text-sm">shubkatariya3@gmail.com</span>
-//         </div>
-//         <FaChevronDown className="text-gray-700 text-sm" />
-//       </div>
-//     </div>
-//   );
-// };
-
-// const FilterSection = () => {
-//   return (
-//     <div className="flex space-x-2 mt-4">
-//       {["All", "Pre Sarfaesi", "NPA", "13(2) Responses", "Symbolic Possession", "DM Order", "Physical Possessions", "Auctions"].map((filter) => (
-//         <button key={filter} className="px-4 py-2 bg-gray-200 rounded hover:bg-sky-300">
-//           {filter}
-//         </button>
-//       ))}
-//     </div>
-//   );
-// };
-
-// const Table = () => {
-//   const [currentPage, setCurrentPage] = useState(1);
-//   const entriesPerPage = 10;
-
-//   const data =  [
-//     { loanNo: "L28U3247", loanType: "Home Loan", borrower: "Vedika Sachar", borrowerAddress: "83 Yogi Ganj", coBorrower: "Divit Vora", coBorrowerAddress: "24/543 Acharya Path", currentDPD: 91, amount: "₹ 1934068", region: "West", state: "Uttar Pradesh" },
-//       { loanNo: "L28U3243", loanType: "Car Loan", borrower: "Hrishita Agrawal", borrowerAddress: "86/622 Deo Path", coBorrower: "Mahika Tak", coBorrowerAddress: "58 Tela Road", currentDPD: 90, amount: "₹ 1842143", region: "North", state: "Madya Pradesh" },
-//       { loanNo: "L28U3247", loanType: "Home Loan", borrower: "Vedika Sachar", borrowerAddress: "83 Yogi Ganj", coBorrower: "Divit Vora", coBorrowerAddress: "24/543 Acharya Path", currentDPD: 91, amount: "₹ 1934068", region: "West", state: "Uttar Pradesh" },
-//       { loanNo: "L28U3243", loanType: "Car Loan", borrower: "Hrishita Agrawal", borrowerAddress: "86/622 Deo Path", coBorrower: "Mahika Tak", coBorrowerAddress: "58 Tela Road", currentDPD: 90, amount: "₹ 1842143", region: "North", state: "Madya Pradesh" },
-//       { loanNo: "L28U3247", loanType: "Home Loan", borrower: "Vedika Sachar", borrowerAddress: "83 Yogi Ganj", coBorrower: "Divit Vora", coBorrowerAddress: "24/543 Acharya Path", currentDPD: 91, amount: "₹ 1934068", region: "West", state: "Uttar Pradesh" },
-//       { loanNo: "L28U3243", loanType: "Car Loan", borrower: "Hrishita Agrawal", borrowerAddress: "86/622 Deo Path", coBorrower: "Mahika Tak", coBorrowerAddress: "58 Tela Road", currentDPD: 90, amount: "₹ 1842143", region: "North", state: "Madya Pradesh" },
-//       { loanNo: "L28U3247", loanType: "Home Loan", borrower: "Vedika Sachar", borrowerAddress: "83 Yogi Ganj", coBorrower: "Divit Vora", coBorrowerAddress: "24/543 Acharya Path", currentDPD: 91, amount: "₹ 1934068", region: "West", state: "Uttar Pradesh" },
-//       { loanNo: "L28U3243", loanType: "Car Loan", borrower: "Hrishita Agrawal", borrowerAddress: "86/622 Deo Path", coBorrower: "Mahika Tak", coBorrowerAddress: "58 Tela Road", currentDPD: 90, amount: "₹ 1842143", region: "North", state: "Madya Pradesh" },
-//       { loanNo: "L28U3247", loanType: "Home Loan", borrower: "Vedika Sachar", borrowerAddress: "83 Yogi Ganj", coBorrower: "Divit Vora", coBorrowerAddress: "24/543 Acharya Path", currentDPD: 91, amount: "₹ 1934068", region: "West", state: "Uttar Pradesh" },
-//       { loanNo: "L28U3243", loanType: "Car Loan", borrower: "Hrishita Agrawal", borrowerAddress: "86/622 Deo Path", coBorrower: "Mahika Tak", coBorrowerAddress: "58 Tela Road", currentDPD: 90, amount: "₹ 1842143", region: "North", state: "Madya Pradesh" },
-//       { loanNo: "L28U3247", loanType: "Home Loan", borrower: "Somya Sachar", borrowerAddress: "83 Yogi Ganj", coBorrower: "Divit Vora", coBorrowerAddress: "24/543 Acharya Path", currentDPD: 91, amount: "₹ 1934068", region: "West", state: "Uttar Pradesh" },
-//       { loanNo: "L28U3243", loanType: "Car Loan", borrower: "Srinivas Agrawal", borrowerAddress: "86/622 Deo Path", coBorrower: "Mahika Tak", coBorrowerAddress: "58 Tela Road", currentDPD: 90, amount: "₹ 1842143", region: "North", state: "Madya Pradesh" },
-//   ];
-
-//   // Pagination Logic
-//   const indexOfLastEntry = currentPage * entriesPerPage;
-//   const indexOfFirstEntry = indexOfLastEntry - entriesPerPage;
-//   const currentEntries = data.slice(indexOfFirstEntry, indexOfLastEntry);
-
-//   return (
-//     <div>
-//       <input
-//         type="text"
-//         placeholder="Search Loan Number"
-//         className="border p-2 rounded w-full mt-2"
-//       />
-//       <div className="flex justify-end space-x-2 mt-2">
-//         <button className="px-4 py-2 bg-gray-200 rounded hover:bg-sky-300 flex items-center">
-//           Select Columns <FaChevronDown className="ml-1" />
-//         </button>
-//         <button className="px-4 py-2 bg-gray-200 rounded hover:bg-sky-300 flex items-center">
-//           <FaFilter className="mr-2" /> More Filters
-//         </button>
-//       </div>
-      
-//       <table className="w-full border-collapse border border-gray-200 mt-4">
-//         <thead>
-//           <tr className="bg-gray-100">
-//             {[
-//               "Loan No.", "Loan Type", "Borrower", "Borrower Address",
-//               "Co Borrower 1 Name", "Co Borrower 1 Address", "Current DPD",
-//               "Sanction Amount", "Region", "State"
-//             ].map((col) => (
-//               <th key={col} className="border px-3 py-2 cursor-pointer whitespace-nowrap">
-//                 <span className="flex items-center gap-1">
-//                   {col}
-//                   <FaSort />
-//                 </span>
-//               </th>
-//             ))}
-//           </tr>
-//         </thead>
-//         <tbody>
-//           {currentEntries.map((row, index) => (
-//             <tr key={index} className="text-center hover:bg-sky-50">
-//               <td className="border px-3 py-2 text-blue-500 cursor-pointer">{row.loanNo}</td>
-//               <td className="border px-3 py-2">{row.loanType}</td>
-//               <td className="border px-3 py-2">{row.borrower}</td>
-//               <td className="border px-3 py-2">{row.borrowerAddress}</td>
-//               <td className="border px-3 py-2">{row.coBorrower}</td>
-//               <td className="border px-3 py-2">{row.coBorrowerAddress}</td>
-//               <td className="border px-3 py-2">{row.currentDPD}</td>
-//               <td className="border px-3 py-2">{row.amount}</td>
-//               <td className="border px-3 py-2">{row.region}</td>
-//               <td className="border px-3 py-2">{row.state}</td>
-//             </tr>
-//           ))}
-//         </tbody>
-//       </table>
-
-//       {/* Pagination Controls */}
-//       <div className="flex justify-end space-x-2 mt-4">
-//         <button
-//           className={`px-4 py-2 rounded ${currentPage === 1 ? "bg-gray-300 cursor-not-allowed" : "bg-gray-200 hover:bg-sky-300"}`}
-//           disabled={currentPage === 1}
-//           onClick={() => setCurrentPage(currentPage - 1)}
-//         >
-//           Previous
-//         </button>
-//         <button
-//           className={`px-4 py-2 rounded ${currentPage * entriesPerPage >= data.length ? "bg-gray-300 cursor-not-allowed" : "bg-gray-200 hover:bg-sky-300"}`}
-//           disabled={currentPage * entriesPerPage >= data.length}
-//           onClick={() => setCurrentPage(currentPage + 1)}
-//         >
-//           Next
-//         </button>
-//       </div>
-//     </div>
-//   );
-// };
-
-// const Dashboard = () => {
-//   return (
-//     <div className="flex h-screen bg-gray-100">
-//       <Sidebar />
-//       <div className="flex-1 flex flex-col">
-//         <Header />
-//         <div className="p-5">
-//           <h2 className="text-2xl font-bold">Portfolio</h2>
-//           <FilterSection />
-//           <Table />
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Dashboard;
-
-// import React, { useState } from "react";
-// import { 
-//   FaUserCircle, FaSort, FaFilter, FaHome, 
-//   FaBriefcase, FaBell, FaStickyNote, FaHammer, 
-//   FaCloudUploadAlt, FaTools, FaUserCog, FaShieldAlt, 
-//   FaChevronDown 
-// } from "react-icons/fa";
-
-// const Sidebar = () => {
-//   return (
-//     <div className="w-64 h-screen bg-white shadow-md p-5">
-//       <div className="flex items-center mb-4">
-//         <img src="/logo.png" alt="Company Logo" className="w-10 h-10 mr-2" />
-//         <h2 className="text-xl font-bold">Resollect</h2>
-//       </div>
-//       <ul className="space-y-4">
-//         {[
-//           { name: "Dashboard", icon: <FaHome /> },
-//           { name: "Portfolio", icon: <FaBriefcase /> },
-//           { name: "Notifications", icon: <FaBell /> },
-//           { name: "Notices", icon: <FaStickyNote /> },
-//           { name: "Auction", icon: <FaHammer /> },
-//           { name: "Data Upload", icon: <FaCloudUploadAlt /> },
-//           { name: "Control Panel", icon: <FaTools /> },
-//           { name: "User Management", icon: <FaUserCog /> },
-//           { name: "Permissions", icon: <FaShieldAlt /> }
-//         ].map((item) => (
-//           <li key={item.name} className="p-2 hover:bg-sky-200 rounded cursor-pointer flex items-center">
-//             <span className="mr-2">{item.icon}</span> {item.name}
-//           </li>
-//         ))}
-//       </ul>
-//     </div>
-//   );
-// };
-
-// const Header = () => {
-//   return (
-//     <div className="flex justify-between items-center p-4 shadow-md bg-white">
-//       <div className="flex items-center"></div>
-//       <div className="flex items-center space-x-2">
-//         <FaUserCircle className="text-gray-700 text-xl" />
-//         <div className="flex flex-col items-end">
-//           <span className="text-gray-700 font-bold">Shubham</span>
-//           <span className="text-gray-500 text-sm">shubkatariya3@gmail.com</span>
-//         </div>
-//         <FaChevronDown className="text-gray-700 text-sm" />
-//       </div>
-//     </div>
-//   );
-// };
-
-// const FilterSection = () => {
-//   return (
-//     <div className="flex space-x-2 mt-4">
-//       {["All", "Pre Sarfaesi", "NPA", "13(2) Responses", "Symbolic Possession", "DM Order", "Physical Possessions", "Auctions"].map((filter) => (
-//         <button key={filter} className="px-4 py-2 bg-gray-200 rounded hover:bg-sky-300">
-//           {filter}
-//         </button>
-//       ))}
-//     </div>
-//   );
-// };
-
-// const Table = () => {
-//   const [currentPage, setCurrentPage] = useState(1);
-//   const entriesPerPage = 10;
-
-//   const data =  [
-//     { loanNo: "L28U3247", loanType: "Home Loan", borrower: "Vedika Sachar", borrowerAddress: "83 Yogi Ganj", coBorrower: "Divit Vora", coBorrowerAddress: "24/543 Acharya Path", currentDPD: 91, amount: "₹ 1934068", region: "West", state: "Uttar Pradesh" },
-//       { loanNo: "L28U3243", loanType: "Car Loan", borrower: "Hrishita Agrawal", borrowerAddress: "86/622 Deo Path", coBorrower: "Mahika Tak", coBorrowerAddress: "58 Tela Road", currentDPD: 90, amount: "₹ 1842143", region: "North", state: "Madya Pradesh" },
-//       { loanNo: "L28U3247", loanType: "Home Loan", borrower: "Vedika Sachar", borrowerAddress: "83 Yogi Ganj", coBorrower: "Divit Vora", coBorrowerAddress: "24/543 Acharya Path", currentDPD: 91, amount: "₹ 1934068", region: "West", state: "Uttar Pradesh" },
-//       { loanNo: "L28U3243", loanType: "Car Loan", borrower: "Hrishita Agrawal", borrowerAddress: "86/622 Deo Path", coBorrower: "Mahika Tak", coBorrowerAddress: "58 Tela Road", currentDPD: 90, amount: "₹ 1842143", region: "North", state: "Madya Pradesh" },
-//       { loanNo: "L28U3247", loanType: "Home Loan", borrower: "Vedika Sachar", borrowerAddress: "83 Yogi Ganj", coBorrower: "Divit Vora", coBorrowerAddress: "24/543 Acharya Path", currentDPD: 91, amount: "₹ 1934068", region: "West", state: "Uttar Pradesh" },
-//       { loanNo: "L28U3243", loanType: "Car Loan", borrower: "Hrishita Agrawal", borrowerAddress: "86/622 Deo Path", coBorrower: "Mahika Tak", coBorrowerAddress: "58 Tela Road", currentDPD: 90, amount: "₹ 1842143", region: "North", state: "Madya Pradesh" },
-//       { loanNo: "L28U3247", loanType: "Home Loan", borrower: "Vedika Sachar", borrowerAddress: "83 Yogi Ganj", coBorrower: "Divit Vora", coBorrowerAddress: "24/543 Acharya Path", currentDPD: 91, amount: "₹ 1934068", region: "West", state: "Uttar Pradesh" },
-//       { loanNo: "L28U3243", loanType: "Car Loan", borrower: "Hrishita Agrawal", borrowerAddress: "86/622 Deo Path", coBorrower: "Mahika Tak", coBorrowerAddress: "58 Tela Road", currentDPD: 90, amount: "₹ 1842143", region: "North", state: "Madya Pradesh" },
-//       { loanNo: "L28U3247", loanType: "Home Loan", borrower: "Vedika Sachar", borrowerAddress: "83 Yogi Ganj", coBorrower: "Divit Vora", coBorrowerAddress: "24/543 Acharya Path", currentDPD: 91, amount: "₹ 1934068", region: "West", state: "Uttar Pradesh" },
-//       { loanNo: "L28U3243", loanType: "Car Loan", borrower: "Hrishita Agrawal", borrowerAddress: "86/622 Deo Path", coBorrower: "Mahika Tak", coBorrowerAddress: "58 Tela Road", currentDPD: 90, amount: "₹ 1842143", region: "North", state: "Madya Pradesh" },
-//       { loanNo: "L28U3247", loanType: "Home Loan", borrower: "Somya Sachar", borrowerAddress: "83 Yogi Ganj", coBorrower: "Divit Vora", coBorrowerAddress: "24/543 Acharya Path", currentDPD: 91, amount: "₹ 1934068", region: "West", state: "Uttar Pradesh" },
-//       { loanNo: "L28U3243", loanType: "Car Loan", borrower: "Srinivas Agrawal", borrowerAddress: "86/622 Deo Path", coBorrower: "Mahika Tak", coBorrowerAddress: "58 Tela Road", currentDPD: 90, amount: "₹ 1842143", region: "North", state: "Madya Pradesh" },
-//   ];
-
-//   // Pagination Logic
-//   const indexOfLastEntry = currentPage * entriesPerPage;
-//   const indexOfFirstEntry = indexOfLastEntry - entriesPerPage;
-//   const currentEntries = data.slice(indexOfFirstEntry, indexOfLastEntry);
-
-//   return (
-//     <div>
-//       <input 
-//         type="text" 
-//         placeholder="Search Loan Number" 
-//         className="border p-2 rounded w-full mt-2" 
-//       />
-//       <div className="flex justify-end space-x-2 mt-2">
-//         <button className="px-4 py-2 bg-gray-200 rounded hover:bg-sky-300 flex items-center">
-//           Select Columns <FaChevronDown className="ml-1" />
-//         </button>
-//         <button className="px-4 py-2 bg-gray-200 rounded hover:bg-sky-300 flex items-center">
-//           <FaFilter className="mr-2" /> More Filters
-//         </button>
-//       </div>
-      
-//       <table className="w-full border-collapse border border-gray-200 mt-4">
-//         <thead>
-//           <tr className="bg-gray-100">
-//             {[
-//               "Loan No.", "Loan Type", "Borrower", "Borrower Address",
-//               "Co Borrower 1 Name", "Co Borrower 1 Address", "Current DPD",
-//               "Sanction Amount", "Region", "State"
-//             ].map((col) => (
-//               <th key={col} className="border px-3 py-2 cursor-pointer whitespace-nowrap">
-//                 <span className="flex items-center gap-1">
-//                   {col}
-//                   <FaSort />
-//                 </span>
-//               </th>
-//             ))}
-//           </tr>
-//         </thead>
-//         <tbody>
-//           {currentEntries.map((row, index) => (
-//             <tr key={index} className="text-center hover:bg-sky-50">
-//               <td className="border px-3 py-2 text-blue-500 cursor-pointer">{row.loanNo}</td>
-//               <td className="border px-3 py-2">{row.loanType}</td>
-//               <td className="border px-3 py-2">{row.borrower}</td>
-//               <td className="border px-3 py-2">{row.borrowerAddress}</td>
-//               <td className="border px-3 py-2">{row.coBorrower}</td>
-//               <td className="border px-3 py-2">{row.coBorrowerAddress}</td>
-//               <td className="border px-3 py-2">{row.currentDPD}</td>
-//               <td className="border px-3 py-2">{row.amount}</td>
-//               <td className="border px-3 py-2">{row.region}</td>
-//               <td className="border px-3 py-2">{row.state}</td>
-//             </tr>
-//           ))}
-//         </tbody>
-//       </table>
-
-//       {/* Pagination Controls */}
-//       <div className="flex justify-end space-x-2 mt-4">
-//         <button 
-//           className={`px-4 py-2 rounded ${currentPage === 1 ? "bg-gray-300 cursor-not-allowed" : "bg-gray-200 hover:bg-sky-300"}`}
-//           disabled={currentPage === 1}
-//           onClick={() => setCurrentPage(currentPage - 1)}
-//         >
-//           Previous
-//         </button>
-//         <button 
-//           className={`px-4 py-2 rounded ${currentPage * entriesPerPage >= data.length ? "bg-gray-300 cursor-not-allowed" : "bg-gray-200 hover:bg-sky-300"}`}
-//           disabled={currentPage * entriesPerPage >= data.length}
-//           onClick={() => setCurrentPage(currentPage + 1)}
-//         >
-//           Next
-//         </button>
-//       </div>
-//     </div>
-//   );
-// };
-
-// const Dashboard = () => {
-//   return (
-//     <div className="flex h-screen bg-gray-100">
-//       <Sidebar />
-//       <div className="flex-1 flex flex-col">
-//         <Header />
-//         <div className="p-5">
-//           <h2 className="text-2xl font-bold">Portfolio</h2>
-//           <FilterSection />
-//           <Table />
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Dashboard;
 
 
 "use client"
@@ -413,6 +25,7 @@ import {
   FaEyeSlash,
 } from "react-icons/fa"
 
+
 const Sidebar = ({ setActiveSection }) => {
   const menuItems = [
     { name: "Dashboard", icon: <FaHome />, key: "dashboard" },
@@ -424,31 +37,34 @@ const Sidebar = ({ setActiveSection }) => {
     { name: "Control Panel", icon: <FaTools />, key: "controlPanel" },
     { name: "User Management", icon: <FaUserCog />, key: "userManagement" },
     { name: "Permissions", icon: <FaShieldAlt />, key: "permissions" },
+    
+   
   ]
 
   return (
     
-    <div className="w-64 h-screen bg-white shadow-md p-5">
+    <div className="64 h-screen bg-white shadow-md p-5 ">
       <div className="flex items-center mb-4">
-        <img src="..\resollect_logo.jpg" alt="Company Logo" className="w-10 h-10 mr-2" />
+        <img src="..\resollect_logo.jpg" alt="Company Logo" className="w-10 h-10 mr-0.5" />
         <h1 className="text-4xl font-bold text-blue-900">esollect</h1>
       </div>
       <ul className="space-y-4">
         {menuItems.map((item) => (
           <li
             key={item.name}
-            className="p-2 hover:bg-sky-200 rounded cursor-pointer flex items-center"
+            className="p-2 hover:bg-sky-500 rounded cursor-pointer flex items-center"
             onClick={() => setActiveSection(item.key)}
           >
             <span className="mr-2">{item.icon}</span> {item.name}
           </li>
         ))}
       </ul>
-      <div className="flex items-center justify-center border-t  pt-8 mt-14">
+      <footer><div className="flex items-center justify-center border-t  pt-8 mt-40">
     <span className="text-gray-500 text-sm">Powered by</span>
-    <img src="../resollect_logo.jpg" alt="Esollect Logo" className="w-6 h-6 mx-2" />
+    <img src="../resollect_logo.jpg" alt="esollect Logo" className="w-6 h-6 mx-1 mr-0" />
     <span className="text-blue-900 font-bold">esollect</span>
-      </div>
+      </div>
+      </footer>
        
     </div>
     
@@ -461,9 +77,9 @@ const Header = ({ toggleProfileBox, showProfileBox }) => {
     <div className="flex justify-between items-center p-4 shadow-md bg-white relative">
       <div className="flex items-center"></div>
       <div className="flex items-center space-x-2 cursor-pointer" onClick={toggleProfileBox}>
-        <FaUserCircle className="text-gray-700 text-xl" />
+        <FaUserCircle className="text-gray-700 text-4xl" />
         <div className="flex flex-col items-end">
-          <span className="text-gray-700 font-bold">Shubham </span>
+          <span className="text-gray-700 font-bold">Shubham Katariya</span>
           <span className="text-gray-500 text-sm">shubkatariya3@gmail.com</span>
         </div>
         <FaChevronDown className="text-gray-700 text-sm" />
@@ -474,7 +90,7 @@ const Header = ({ toggleProfileBox, showProfileBox }) => {
           <div className="flex items-center space-x-3 mb-4">
             <FaUserCircle className="text-gray-700 text-4xl" />
             <div>
-              <h3 className="font-bold">Shubham</h3>
+              <h3 className="font-bold">Shubham katariya</h3>
               <p className="text-sm text-gray-500">shubkatariya3@gmail.com</p>
             </div>
           </div>
@@ -496,7 +112,7 @@ const FilterSection = ({ activeFilter, setActiveFilter }) => {
     "All",
     "Pre Sarfaesi",
     "NPA",
-    "13(2) Responses",
+    "Responses",
     "Symbolic Possession",
     "DM Order",
     "Physical Possessions",
@@ -750,7 +366,34 @@ const Table = () => {
     {
       key: "state",
       label: "State",
-      options: ["Uttar Pradesh", "Madya Pradesh", "Maharashtra", "Gujarat", "Karnataka"],
+      options: ["Andhra Pradesh",
+  "Arunachal Pradesh",
+  "Assam",
+  "Bihar",
+  "Chhattisgarh",
+  "Goa",
+  "Gujarat",
+  "Haryana",
+  "Himachal Pradesh",
+  "Jharkhand",
+  "Karnataka",
+  "Kerala",
+  "Madhya Pradesh",
+  "Maharashtra",
+  "Manipur",
+  "Meghalaya",
+  "Mizoram",
+  "Nagaland",
+  "Odisha",
+  "Punjab",
+  "Rajasthan",
+  "Sikkim",
+  "Tamil Nadu",
+  "Telangana",
+  "Tripura",
+  "Uttar Pradesh",
+  "Uttarakhand",
+  "West Bengal"],
     },
     {
       key: "region",
@@ -770,151 +413,20 @@ const Table = () => {
   ]
 
   const data = [
-    {
-      loanNo: "L28U3247",
-      loanType: "Home Loan",
-      borrower: "Vedika Sachar",
-      borrowerAddress: "83 Yogi Ganj",
-      coBorrower: "Divit Vora",
-      coBorrowerAddress: "24/543 Acharya Path",
-      currentDPD: 91,
-      amount: "₹ 1934068",
-      region: "West",
-      state: "Uttar Pradesh",
-    },
-    {
-      loanNo: "L28U3243",
-      loanType: "Car Loan",
-      borrower: "Hrishita Agrawal",
-      borrowerAddress: "86/622 Deo Path",
-      coBorrower: "Mahika Tak",
-      coBorrowerAddress: "58 Tela Road",
-      currentDPD: 90,
-      amount: "₹ 1842143",
-      region: "North",
-      state: "Madya Pradesh",
-    },
-    {
-      loanNo: "L28U3247",
-      loanType: "Home Loan",
-      borrower: "Vedika Sachar",
-      borrowerAddress: "83 Yogi Ganj",
-      coBorrower: "Divit Vora",
-      coBorrowerAddress: "24/543 Acharya Path",
-      currentDPD: 91,
-      amount: "₹ 1934068",
-      region: "West",
-      state: "Uttar Pradesh",
-    },
-    {
-      loanNo: "L28U3243",
-      loanType: "Car Loan",
-      borrower: "Hrishita Agrawal",
-      borrowerAddress: "86/622 Deo Path",
-      coBorrower: "Mahika Tak",
-      coBorrowerAddress: "58 Tela Road",
-      currentDPD: 90,
-      amount: "₹ 1842143",
-      region: "North",
-      state: "Madya Pradesh",
-    },
-    {
-      loanNo: "L28U3247",
-      loanType: "Home Loan",
-      borrower: "Vedika Sachar",
-      borrowerAddress: "83 Yogi Ganj",
-      coBorrower: "Divit Vora",
-      coBorrowerAddress: "24/543 Acharya Path",
-      currentDPD: 91,
-      amount: "₹ 1934068",
-      region: "West",
-      state: "Uttar Pradesh",
-    },
-    {
-      loanNo: "L28U3243",
-      loanType: "Car Loan",
-      borrower: "Hrishita Agrawal",
-      borrowerAddress: "86/622 Deo Path",
-      coBorrower: "Mahika Tak",
-      coBorrowerAddress: "58 Tela Road",
-      currentDPD: 90,
-      amount: "₹ 1842143",
-      region: "North",
-      state: "Madya Pradesh",
-    },
-    {
-      loanNo: "L28U3247",
-      loanType: "Home Loan",
-      borrower: "Vedika Sachar",
-      borrowerAddress: "83 Yogi Ganj",
-      coBorrower: "Divit Vora",
-      coBorrowerAddress: "24/543 Acharya Path",
-      currentDPD: 91,
-      amount: "₹ 1934068",
-      region: "West",
-      state: "Uttar Pradesh",
-    },
-    {
-      loanNo: "L28U3243",
-      loanType: "Car Loan",
-      borrower: "Hrishita Agrawal",
-      borrowerAddress: "86/622 Deo Path",
-      coBorrower: "Mahika Tak",
-      coBorrowerAddress: "58 Tela Road",
-      currentDPD: 90,
-      amount: "₹ 1842143",
-      region: "North",
-      state: "Madya Pradesh",
-    },
-    {
-      loanNo: "L28U3247",
-      loanType: "Home Loan",
-      borrower: "Vedika Sachar",
-      borrowerAddress: "83 Yogi Ganj",
-      coBorrower: "Divit Vora",
-      coBorrowerAddress: "24/543 Acharya Path",
-      currentDPD: 91,
-      amount: "₹ 1934068",
-      region: "West",
-      state: "Uttar Pradesh",
-    },
-    {
-      loanNo: "L28U3243",
-      loanType: "Car Loan",
-      borrower: "Hrishita Agrawal",
-      borrowerAddress: "86/622 Deo Path",
-      coBorrower: "Mahika Tak",
-      coBorrowerAddress: "58 Tela Road",
-      currentDPD: 90,
-      amount: "₹ 1842143",
-      region: "North",
-      state: "Madya Pradesh",
-    },
-    {
-      loanNo: "L28U3247",
-      loanType: "Home Loan",
-      borrower: "Somya Sachar",
-      borrowerAddress: "83 Yogi Ganj",
-      coBorrower: "Divit Vora",
-      coBorrowerAddress: "24/543 Acharya Path",
-      currentDPD: 91,
-      amount: "₹ 1934068",
-      region: "West",
-      state: "Uttar Pradesh",
-    },
-    {
-      loanNo: "L28U3243",
-      loanType: "Car Loan",
-      borrower: "Srinivas Agrawal",
-      borrowerAddress: "86/622 Deo Path",
-      coBorrower: "Mahika Tak",
-      coBorrowerAddress: "58 Tela Road",
-      currentDPD: 90,
-      amount: "₹ 1842143",
-      region: "North",
-      state: "Madya Pradesh",
-    },
-  ]
+    { loanNo: "L28U3247", loanType: "Home Loan", borrower: "Vedika Sachar", borrowerAddress: "83 Yogi Ganj", coBorrower: "Divit Vora", coBorrowerAddress: "24/543 Acharya Path", currentDPD: 91, amount: "₹ 1934068", region: "West", state: "Uttar Pradesh" },
+    { loanNo: "L28U3243", loanType: "Car Loan", borrower: "Hrishita Agrawal", borrowerAddress: "86/622 Deo Path", coBorrower: "Mahika Tak", coBorrowerAddress: "58 Tela Road", currentDPD: 90, amount: "₹ 1842143", region: "North", state: "Madhya Pradesh" },
+    { loanNo: "L28U3250", loanType: "Personal Loan", borrower: "Rishabh Khurana", borrowerAddress: "12/3 Raj Nagar", coBorrower: "Ananya Bhatia", coBorrowerAddress: "77/21 Krishna Vihar", currentDPD: 75, amount: "₹ 820345", region: "East", state: "West Bengal" },
+    { loanNo: "L28U3251", loanType: "Education Loan", borrower: "Sanya Gupta", borrowerAddress: "45 Nehru Colony", coBorrower: "Aarav Kapoor", coBorrowerAddress: "50/9 MG Road", currentDPD: 60, amount: "₹ 560000", region: "North", state: "Punjab" },
+    { loanNo: "L28U3252", loanType: "Home Loan", borrower: "Rajesh Mehta", borrowerAddress: "5B Patel Nagar", coBorrower: "Simran Chawla", coBorrowerAddress: "22/4 Rose Garden", currentDPD: 105, amount: "₹ 2456790", region: "South", state: "Karnataka" },
+    { loanNo: "L28U3253", loanType: "Car Loan", borrower: "Tushar Sharma", borrowerAddress: "29 Shanti Path", coBorrower: "Mehak Jain", coBorrowerAddress: "65D Green Avenue", currentDPD: 30, amount: "₹ 970000", region: "West", state: "Rajasthan" },
+    { loanNo: "L28U3254", loanType: "Personal Loan", borrower: "Sneha Tandon", borrowerAddress: "3/98 Gokul Dham", coBorrower: "Kunal Sethi", coBorrowerAddress: "12/4 MG Road", currentDPD: 45, amount: "₹ 450000", region: "North", state: "Haryana" },
+    { loanNo: "L28U3255", loanType: "Home Loan", borrower: "Aniket Joshi", borrowerAddress: "88/42 Rajendra Nagar", coBorrower: "Aditi Verma", coBorrowerAddress: "101 Sunder Vihar", currentDPD: 120, amount: "₹ 3178000", region: "South", state: "Tamil Nadu" },
+    { loanNo: "L28U3256", loanType: "Education Loan", borrower: "Ishita Malhotra", borrowerAddress: "16B Lotus Colony", coBorrower: "Karan Malhotra", coBorrowerAddress: "10/5B Model Town", currentDPD: 25, amount: "₹ 650000", region: "West", state: "Maharashtra" },
+    { loanNo: "L28U3257", loanType: "Car Loan", borrower: "Sarthak Deshmukh", borrowerAddress: "78 Sunrise Avenue", coBorrower: "Palak Chopra", coBorrowerAddress: "66/7 Residency Road", currentDPD: 40, amount: "₹ 1150000", region: "North", state: "Himachal Pradesh" },
+    { loanNo: "L28U3258", loanType: "Personal Loan", borrower: "Varun Nair", borrowerAddress: "20A Sai Residency", coBorrower: "Neha Krishnan", coBorrowerAddress: "7/2 Marina Road", currentDPD: 85, amount: "₹ 790500", region: "South", state: "Kerala" },
+    { loanNo: "L28U3259", loanType: "Home Loan", borrower: "Yashwant Singh", borrowerAddress: "15 Royal Park", coBorrower: "Pooja Yadav", coBorrowerAddress: "99 Gandhi Path", currentDPD: 110, amount: "₹ 2900000", region: "East", state: "Bihar" }
+]
+
 
   // Handle clicks outside of dropdown menus
   useEffect(() => {
